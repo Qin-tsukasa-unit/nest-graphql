@@ -55,3 +55,31 @@ npm run start
 ```
 http://localhost:3000/graphql
 ```
+
+## TypeORM migration ファイル作成
+
+◆Windows
+
+```bash
+.\node_modules\.bin\ts-node ./node_modules/typeorm/cli.js migration:generate -n [エンティティ名]
+```
+
+◆Mac
+
+```bash
+npx ts-node ./node_modules/.bin/typeorm migration:generate -n [エンティティ名]
+```
+
+## TypeORM migration 実行
+
+◆Windows
+
+```bash
+.\node_modules\.bin\ts-node ./node_modules/typeorm/cli.js migration:run
+```
+
+◆Mac
+
+```bash
+npx ts-node ./node_modules/.bin/typeorm migration:run
+```
