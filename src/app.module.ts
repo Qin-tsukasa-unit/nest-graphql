@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { GraphQLModule } from '@nestjs/graphql';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import ormconfig from '../ormconfig.js';
-import { RecipesModule } from './recipes/recipes.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -11,7 +11,7 @@ import { RecipesModule } from './recipes/recipes.module';
       playground: true,
       autoSchemaFile: 'schema.graphql',
     }),
-    RecipesModule,
+    UsersModule,
   ],
 })
 export class AppModule {}

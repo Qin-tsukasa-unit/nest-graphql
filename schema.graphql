@@ -2,11 +2,13 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Recipe {
+type User {
   id: ID!
-  title: String!
+  firstName: String!
+  lastName: String!
+  age: String!
 }
 
 type Query {
-  recipes: [Recipe!]!
+  users: [User!]!
 }
