@@ -91,9 +91,9 @@ npx ts-node ./node_modules/.bin/typeorm migration:run
 ```
 mutation {
   registerUser(
-	  firstName: "hoge",
+    firstName: "hoge",
     lastName: "fuga",
-   	age: 20
+    age: 20
   ){
     id
     firstName
