@@ -83,3 +83,35 @@ npx ts-node ./node_modules/.bin/typeorm migration:generate -n [エンティテ�
 ```bash
 npx ts-node ./node_modules/.bin/typeorm migration:run
 ```
+
+## クエリ例
+
+### ユーザー登録
+
+```
+mutation {
+  registerUser(
+	  firstName: "hoge",
+    lastName: "fuga",
+   	age: 20
+  ){
+    id
+    firstName
+    lastName
+    age
+  }
+}
+```
+
+### ユーザー一覧取得
+
+```
+query{
+  users{
+    id
+    firstName
+    lastName
+    age
+  }
+}
+```

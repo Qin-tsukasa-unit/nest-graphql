@@ -6,9 +6,13 @@ type User {
   id: ID!
   firstName: String!
   lastName: String!
-  age: String!
+  age: Float!
 }
 
 type Query {
   users: [User!]!
+}
+
+type Mutation {
+  registerUser(age: Float!, lastName: String!, firstName: String!): User!
 }
